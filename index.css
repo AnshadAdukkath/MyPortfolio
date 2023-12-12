@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #02100f; /* Light background color */
+}
+
+
+/* Other styles remain unchanged */
+
+section {
+    padding: 2em;
+    animation: slideFromLeft 1s ease-out;
+    background-color: #00aeab; /* Light background color for sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    border-radius: 8px; /* Rounded corners */
+}
+
+@keyframes slideFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Additional styling for sections, projects, and footer - customize as needed */
+/* ... */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px; /* Optional: Set a height for vertical centering */
+    background-color: #020043;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 1%;
+}
+
+
+header {
+    position: relative;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images.jpeg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+img {
+    width: 200px; /* Adjust size as needed */
+    border-radius: 50%; /* Round image */
+    margin-bottom: 20px;
+}
+
+/* Styling for sections, projects, and footer - customize as needed */
+/* ... */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
